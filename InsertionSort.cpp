@@ -4,15 +4,19 @@ using namespace std;
 int arr(20);      //membuat array dengan panjang data 20
 int n;            //membuat variable inputan n
 
-void input (){
-    while (true){
+void input ()
+{
+    while (true)
+    {
         cout << "Masukkan Jumlah Data Pada Array : ";
         cin >> n;
 
-        if (n <= 20){
+        if (n <= 20)
+        {
             break;
         }
-        else{
+        else
+        {
             cout << "\nArray Tidak Boleh Lebih dari 20\n";
         }
     }
@@ -21,13 +25,15 @@ void input (){
     cout << "=====Masukkan Element Array=====";
     cout << "================================";
 
-    for (int i = 0; i < n; i++ ){
+    for (int i = 0; i < n; i++ )
+    {
         cout << "Data ke-" << (i+1) << ": ";
         cin >> arr[i];
     }
 }
 
-void insertionsort(){ //procedure insertion sort
+void insertionsort()
+{ //procedure insertion sort
     int temp;
     int j;
 
@@ -48,3 +54,16 @@ void insertionsort(){ //procedure insertion sort
         
     }
 }
+
+void display(){
+    cout << endl;
+    cout << "\n====================";
+    cout << "\nElement Array" << endl;
+    cout << "\n====================";
+
+    for(int j = 0; j < n; j++){
+        cout << arr[j] << endl;
+    }
+    cout << endl;
+}
+
